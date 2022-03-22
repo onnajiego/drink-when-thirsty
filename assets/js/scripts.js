@@ -1,7 +1,7 @@
 const searchBtn = document.getElementById('search');
-const ranNon = document.getElementById('ranNon');
 const drinkSection = document.getElementById('cocktail');
-var cocktailIngr = document.getElementById('cocktailIngr');
+var cocktailTitle = document.getElementById('cocktailTitle');
+var ingredientUl = document.getElementById('ingredients');
 var currentCocktailSearch = [];
 
 // creates cards for cocktails
@@ -21,23 +21,53 @@ function createCard(cocktailName, ingredients) {
     divTitle.classList.add('card-title');
     divTitle.textContent = cocktailName;
     divTitle.setAttribute('value', cocktailName);
-    divTitle.addEventListener('click', function(e){
-        e.preventDefault();
-        console.log(e.target.innerText);
-        for (let index = 0; index < currentCocktailSearch.length; index++) {
-            const element = currentCocktailSearch[index];
-            if (element.name === e.target.innerText) {
-                console.log(element);
-                // create card with ingredients
-            }
-        }
-    })
-    cocktailIngr.appendChild(divRow);
+
+    divTitle.addEventListener('click', nameIngredients);
+
+    cocktailTitle.appendChild(divRow);
     divRow.appendChild(divCol);
     divCol.appendChild(divCard);
     divCard.appendChild(divCont);
     divCont.appendChild(divTitle);
 
+
+    var divRow2 = document.createElement('div');
+    divRow2.classList.add('row');
+    var divCol2 = document.createElement('div');
+    divCol2.classList.add('col', 's12', 'm6');
+    var divCard2 = document.createElement('div');
+    divCard2.classList.add('card', 'blue-grey', 'darken-1');
+    var divCont2 = document.createElement('div');
+    divCont2.classList.add('card-content', 'white-text');
+    var divTitle2 = document.createElement('span');
+    divTitle2.classList.add('card-title');
+    divTitle2.textContent = ingredients;
+    console.log(divTitle2);
+    
+
+    cocktailTitle.appendChild(divRow2);
+    divRow2.appendChild(divCol2);
+    divCol2.appendChild(divCard2);
+    divCard2.appendChild(divCont2);
+    divCont2.appendChild(divTitle2);
+
+
+}
+
+function nameIngredients(e) {
+    e.preventDefault();
+    console.log(e.target.innerText);
+    for (let index = 0; index < currentCocktailSearch.length; index++) {
+        const element = currentCocktailSearch[index];
+        if (element.name === e.target.innerText) {
+            console.log(element);
+            // create card with ingredients
+        }
+    }
+    // for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
+        
+    // }
 }
 
 
@@ -58,7 +88,7 @@ function getDrink() {
         currentCocktailSearch = [];
         currentCocktailSearch = data.body[0];
         console.log(currentCocktailSearch);
-        $(cocktailIngr).empty();
+        $(cocktailTitle).empty();
         var cocktails = data.body[0];
         var numCocktails = cocktails.length <= 5 ? cocktails.length : 5;
         for (var i = 0; i < numCocktails; i++) {
