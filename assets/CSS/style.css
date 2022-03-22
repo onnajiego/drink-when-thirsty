@@ -1,3 +1,16 @@
 header {
     text-align: center;
 }
+
+.searchSect h2{
+    text-align: center;
+}
+
+.searchSect input {
+    text-align: center;
+}
+
+.drinkBtns {
+    display: flex;
+    justify-content: space-evenly;
+}
