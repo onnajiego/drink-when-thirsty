@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <title>Drink When Thirsty</title>
   </head>
@@ -14,15 +15,19 @@
     <div>
       <section>
         <h2>How would you like your drink?</h2>
-        <button id="ranAlco">Random Alcoholic</button>
-        <button id="ranNon">Random Non-Alcoholic</button>
+        <input id="ingredientType" placeholder="Type Ingredient Here" />
+        <button id="search">Search</button>
+        <button id="rando">Random Cocktail</button>
       </section>
-      <section id="cocktail">
-      </section>
-      <ul id="cocktailIngr">
-          
+      
+      <ul class="col-l-6" id="cocktailIngr">   
       </ul>
+      <div id="ingredients">hello world</div>
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
