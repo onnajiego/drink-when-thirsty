@@ -3,11 +3,11 @@ var randoDrink = document.getElementById('randoDrink');
 var cocktailTitle = document.getElementById('cocktailTitle');
 
 // pulls last searched drink ingredient
-function searchedDrink() {
-    var userIngredient = localStorage.getItem('searchedIngredient');
-    console.log(userIngredient);
-    createCard(userIngredient);
-}
+// function searchedDrink() {
+//     var userIngredient = localStorage.getItem('searchedIngredient');
+//     console.log(userIngredient);
+//     createCard(userIngredient);
+// }
 
 // creates cards for cocktails
 function createCard(cocktailName, ingredients) {
@@ -114,4 +114,4 @@ searchBtn.addEventListener('click', getDrink);
 randoDrink.addEventListener('click', getRandoDrink)
 
 
-searchedDrink();
+// searchedDrink();
