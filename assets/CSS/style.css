@@ -1,8 +1,26 @@
 header {
     text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size:x-large;
+}
+
+body {
+    background-color: #1b242c;
+}
+
+.searchSect {
+    background-color: #4580A9;
+    padding-top: 20px;
 }
 
 .searchSect h2{
+    text-align: center;
+    background-color: #4580A9;
+}
+
+.searchSect p {
     text-align: center;
 }
 
@@ -12,5 +30,37 @@ header {
 
 .drinkBtns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    background-color: #3FBDCB;
+}
+
+.searchBtn {
+    margin: 5px;
+}
+
+.randoBtn {
+    margin: 5px;
+}
+
+.names {
+    margin: 5px;
+}
+
+.ingreds {
+    margin: 5px;
+}
+
+.randoInfo {
+    display: flex;
+}
+
+.randoInfo h3 {
+    text-align: center;
+    background-color: #B6324F;
+    margin: 5%
+}
+
+.randoInfo p {
+    background-color: #CEADAF;
+    padding: 5%;
 }

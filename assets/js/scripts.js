@@ -8,7 +8,7 @@ function createCard(cocktailName, ingredients) {
     var mainDiv = document.createElement('div');
     mainDiv.classList.add('row')
     var divCard = document.createElement('div');
-    divCard.classList.add('col', 's2','card', 'indigo', 'darken-4');
+    divCard.classList.add('names', 'col', 's12', 'm4', 'card', 'indigo', 'darken-4');
     var divCont = document.createElement('div');
     divCont.classList.add('card-content', 'white-text');
     var divTitle = document.createElement('span');
@@ -22,7 +22,7 @@ function createCard(cocktailName, ingredients) {
 
     // creates card for ingredients
     var divCard2 = document.createElement('div');
-    divCard2.classList.add('col', 's10', 'card', 'indigo', 'accent-1');
+    divCard2.classList.add('ingreds', 'col', 's12', 'm8', 'card', 'black');
     var divCont2 = document.createElement('div');
     divCont2.classList.add('card-content', 'white-text');
     var divTitle2 = document.createElement('span');
@@ -87,6 +87,7 @@ function getRandoDrink() {
         var cocktailIngredients = `${data.body[i].ingredients}`
         // creating html elements for pulled data
         var ranDiv = document.createElement('div');
+        ranDiv.classList.add('randoInfo')
         var h3 = document.createElement('h3');
         var ingrLi = document.createElement('p')
         h3.innerHTML = cocktailName;
