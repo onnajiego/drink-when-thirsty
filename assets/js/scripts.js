@@ -62,8 +62,6 @@ function getDrink() {
         return response.json();
     })
     .then(function(data) {
-        currentCocktailSearch = [];
-        currentCocktailSearch = data.body[0];
         $(cocktailTitle).empty();
         var cocktails = data.body[0];
         var numCocktails = cocktails.length <= 5 ? cocktails.length : 5;
