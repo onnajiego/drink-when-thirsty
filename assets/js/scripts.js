@@ -1,13 +1,17 @@
 var searchBtn = document.getElementById('search');
 var randoDrink = document.getElementById('randoDrink');
 var cocktailTitle = document.getElementById('cocktailTitle');
+var cocktailArray = [];
+var ingredientArray = [];
 
 // pulls last searched drink ingredient
-// function searchedDrink() {
-//     var userIngredient = localStorage.getItem('searchedIngredient');
-//     console.log(userIngredient);
-//     createCard(userIngredient);
-// }
+function searchedDrink() {
+    var userCt = JSON.parse(localStorage.getItem('ctNames'));
+    var userIngrds = JSON.parse(localStorage.getItem('ctIngrds'));
+    for (let i = 0; i < userCt.length && userIngrds.length; i++) {
+        createCard(userCt[i], userIngrds[i]);
+    }
+}
 
 // creates cards for cocktails
 function createCard(cocktailName, ingredients) {
@@ -20,9 +24,8 @@ function createCard(cocktailName, ingredients) {
     divCont.classList.add('card-content', 'white-text');
     var divTitle = document.createElement('span');
     divTitle.textContent = cocktailName;
-    divTitle.setAttribute('value', cocktailName);
-
-
+    
+   
     mainDiv.appendChild(divCard);
     divCard.appendChild(divCont);
     divCont.appendChild(divTitle);
@@ -34,7 +37,6 @@ function createCard(cocktailName, ingredients) {
     divCont2.classList.add('card-content', 'white-text');
     var divTitle2 = document.createElement('span');
     divTitle2.textContent = ingredients;
-    
     
 
     mainDiv.appendChild(divCard2);
@@ -66,6 +68,10 @@ function getDrink() {
         var cocktails = data.body[0];
         var numCocktails = cocktails.length <= 5 ? cocktails.length : 5;
         for (var i = 0; i < numCocktails; i++) {
+        cocktailArray.push(cocktails[i].name);
+        localStorage.setItem('ctNames', JSON.stringify(cocktailArray))
+        ingredientArray.push(cocktails[i].ingredients);
+        localStorage.setItem('ctIngrds', JSON.stringify(ingredientArray))
         createCard(cocktails[i].name, cocktails[i].ingredients);
         }
     })
@@ -99,7 +105,6 @@ function getRandoDrink() {
         var ingrLi = document.createElement('p')
         h3.innerHTML = cocktailName;
         ingrLi.innerHTML = cocktailIngredients;
-        
         ranDiv.appendChild(h3);
         h3.appendChild(ingrLi);
         cocktailTitle.appendChild(ranDiv);
@@ -114,4 +119,4 @@ searchBtn.addEventListener('click', getDrink);
 randoDrink.addEventListener('click', getRandoDrink)
 
 
-// searchedDrink();
+searchedDrink();
