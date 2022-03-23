@@ -2,6 +2,13 @@ var searchBtn = document.getElementById('search');
 var randoDrink = document.getElementById('randoDrink');
 var cocktailTitle = document.getElementById('cocktailTitle');
 
+// pulls last searched drink ingredient
+function searchedDrink() {
+    var userIngredient = localStorage.getItem('searchedIngredient');
+    console.log(userIngredient);
+    createCard(userIngredient);
+}
+
 // creates cards for cocktails
 function createCard(cocktailName, ingredients) {
     // creates card for cocktail name
@@ -107,3 +114,4 @@ searchBtn.addEventListener('click', getDrink);
 randoDrink.addEventListener('click', getRandoDrink)
 
 
+searchedDrink();
