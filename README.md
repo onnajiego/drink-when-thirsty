@@ -1,72 +1,47 @@
-<h1 align="center"><Drink When Thirsty></h1>
+<h1 align="center"><project-name>Drink When Thirsty</h1>
 
-<p align="center"><project-description></p>
+<p align="center"><project-description>A responsive application where you can search for cocktails by ingredient or select a random cocktail. The purpose of this application is to solve the indecisiveness of drink choice. Users are able to discover hundred of new drinks or go with something they are more familiar with.</p>
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+- [Repo](https://github.com/mmeyer715/drink-when-thirsty> "<project-name> Drink When Thirsty")
 
-- [Live](<Homepage url> "Live View")
+- [Live](<Homepage url> "https://mmeyer715.github.io/drink-when-thirsty/")
 
-- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
-
-- [API](<API Link> "API")
+- [API](<API Link> "https://rapidapi.com/Bmbus/api/cocktails3/")
 
 ## Screenshots
 
-![Home Page](/screenshots/1.png "Home Page")
+![Home Page](./assets/images/screencapture-mmeyer715-github-io-drink-when-thirsty-2022-03-25-09_22_47.png "Home Page")
 
-![](/screenshots/2.png)
-
-![](/screenshots/3.png)
-
-## Available Commands
-
-In the project directory, you can run:
-
-### `npm start" : "react-scripts start"`,
-
-The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### `"npm run build": "react-scripts build"`,
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
-
-### `"npm run test": "react-scripts test"`,
-
-Launches the test runner in the interactive watch mode.
-
-### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
-
-For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
-
-### `"serve": "node server"`
-
-For running the server file on you can use this command.
-
-### `npm run serve`
+![](./assets/images/Drink%20When%20Thirsty.webm)
 
 ## Built With
 
-- JavaScript
-- Node
-- NPM
-- Webpack
 - HTML
 - CSS
+- JavaScript
+- jQuery
+- API Calls
+- Materialize/MUI
+- Local Storage
 
 ## Future Updates
 
-- [ ] Reliable Storage
+- Age Verification
+- User sign up, to save their favorite drinks or make suggestions
+- Recommended daily beverages
 
 ## Author
 
-**Rohit Jain**
+**Maria Bean**
+**Jack Frison**
+**Onyeka Nnajiego**
 
-- [Profile](https://github.com/rohit19060 "Rohit jain")
+
+- [Profile](https://github.com/mmeyer715/drink-when-thirsty "Maria Bean")
 - [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://kingtechnologies.in "Welcome")
+- [Website](https://mmeyer715.github.io/drink-when-thirsty "Welcome")
 
 ## 🤝 Support
 
