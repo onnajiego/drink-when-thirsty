@@ -13,7 +13,7 @@
     <a href="https://github.com/mmeyer715/drink-when-thirsty"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="group-project-1\assets\images\Drink When Thirsty.webm">View Demo</a>
+    ![demo of application](./assets/images/screencapture-mmeyer715-github-io-drink-when-thirsty-2022-03-25-09_22_47.png)
   </p>
 </div>
 
