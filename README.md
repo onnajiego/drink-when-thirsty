@@ -39,9 +39,9 @@
 **Onyeka Nnajiego**
 
 
-- [Profile](https://github.com/mmeyer715/drink-when-thirsty "Maria Bean")
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://mmeyer715.github.io/drink-when-thirsty "Welcome")
+- [Profile](https://onnajiego.github.io/drink-when-thirsty/ "onyeka nnajiego")
+- [Email](mailto:nnajiegoonyeka@gmail.com?subject=Hi "Hi!")
+- [Website](https://onnajiego.github.io/drink-when-thirsty/ "Welcome")
 
 ## 🤝 Support
 
