@@ -4,11 +4,11 @@
 
 ## Links
 
-- [Repo]https://onnajiego.github.io/drink-when-thirsty/(> "<project-name> Drink When Thirsty")
+- [Repo](https://github.com/onnajiego/drink-when-thirsty/)
 
 - [Live](https://onnajiego.github.io/drink-when-thirsty)
 
-- [API]("https://rapidapi.com/Bmbus/api/cocktails3/")
+- [API](https://rapidapi.com/Bmbus/api/cocktails3/)
 
 ## Screenshots
 
